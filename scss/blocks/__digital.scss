@@ -1,0 +1,119 @@
+.digital-section{
+  width: 100%;
+  background-color: #FAFAFA;
+  background-image: url("../../image/hero-phones-desktop.png"), url("../../image/hero-bg-desktop.png");
+  background-repeat: no-repeat;
+  background-position:  calc(50% + 450px), calc(50% + 615px) calc(50% - 50px);
+}
+.digital{
+  padding: 260px 0 227px 0;
+}
+.digital__content{
+  width: 447px;
+}
+.digital__title{
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 100;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: #2D314D;
+}
+.digital__text{
+  margin: 0;
+  margin-bottom: 36px;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.28125px;
+  color: #9597A5;
+}
+.digital__link{
+  display: inline-block;
+  width: 100%;
+  max-width: 163px;
+  padding: 8px 33px;
+  text-decoration: none;
+  background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+  border-radius: 22px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  color: #FFFFFF;
+  transition: opacity 0.3s ease-in-out;
+}
+.digital__link:hover{
+  opacity: 0.4;
+}
+
+@media only screen and(max-width: 768px){
+  .digital-section{
+    background-image: url("../../image-mobile/hero-phones-mobile.png"), url("../../image-mobile/hero-bg-mobile.png");
+    background-position: calc(50%) calc(50% - 160px), calc(50% + 180px) calc(50% - 190px);
+  }
+  .digital{
+    padding: 410px 0 88px 0;
+    position: relative;
+  }
+  .digital__content{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .digital__title{
+    font-size: 40px;
+    line-height: 47px;
+    margin-bottom: 16px;
+  }
+  .digital__text{
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+// @media only screen and(max-width: 644px){
+//   .digital-section{
+//     background-position: calc(50%) calc(50% - 186px), calc(50% + 180px) calc(50% - 230px);
+//   }
+//   .digital{
+//     padding: 420px 0 88px 0;
+//     position: relative;
+//   }
+
+// }
+// @media only screen and(max-width: 425px){
+//   .digital-section{
+//     background-position: calc(50%) calc(50% - 178px), calc(50% + 180px) calc(50% - 230px);
+//   }
+//   .digital{
+//     padding: 420px 0 88px 0;
+//     position: relative;
+//   }
+//   .digital__text{
+//     margin: 0;
+//     margin-bottom: 32px;
+//   }
+// }
+@media only screen and(max-width: 560px){
+  .digital-section{
+    background-position: calc(50%) calc(50% - 185px), calc(50% + 180px) calc(50% - 230px);
+  }
+  // .digital{
+  //   padding: 380px 0 88px 0;
+  //   position: relative;
+  // }
+}
+@media only screen and(max-width: 386px){
+  .digital-section{
+    background-position:calc(50%) calc(50% - 195px), calc(50% + 180px) calc(50% - 230px);
+  }
+}
+@media only screen and(max-width: 347px){
+  .digital-section{
+    background-position:calc(50%) calc(50% - 228px), calc(50% + 180px) calc(50% - 230px);
+  }
+}
+@media only screen and(max-width: 327px){
+  .digital-section{
+    background-position:calc(50%) calc(50% - 231px), calc(50% + 180px) calc(50% - 230px);
+  }
+}
