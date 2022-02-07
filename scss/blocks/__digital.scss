@@ -1,15 +1,30 @@
 .digital-section{
   width: 100%;
   background-color: #FAFAFA;
-  background-image: url("../../image/hero-phones-desktop.png"), url("../../image/hero-bg-desktop.png");
+  background-image: url("../../image/hero-bg-desktop.png");
   background-repeat: no-repeat;
-  background-position:  calc(50% + 450px), calc(50% + 615px) calc(50% - 50px);
+  background-position:  calc(50% + 615px) calc(50% - 50px);
 }
 .digital{
   padding: 260px 0 227px 0;
+  position: relative;
+}
+.digital__img{
+  width: 729px;
+  height: 900px;
+  position: absolute;
+  left: calc(58%);
+  top: 0;
+}
+.digital__img-mobile{
+  position: absolute;
+  display: none;
+  width: 327px;
+  height: 402px;
+  margin: 0 5px 0 5px;
 }
 .digital__content{
-  width: 447px;
+  width: 45%;
 }
 .digital__title{
   margin: 0;
@@ -48,8 +63,8 @@
 
 @media only screen and(max-width: 768px){
   .digital-section{
-    background-image: url("../../image-mobile/hero-phones-mobile.png"), url("../../image-mobile/hero-bg-mobile.png");
-    background-position: calc(50%) calc(50% - 160px), calc(50% + 180px) calc(50% - 190px);
+    background-image:  url("../../image-mobile/hero-bg-mobile.png");
+    background-position: calc(50% + 180px) calc(50% - 225px);
   }
   .digital{
     padding: 410px 0 88px 0;
@@ -69,51 +84,36 @@
     font-size: 15px;
     line-height: 25px;
   }
-}
-// @media only screen and(max-width: 644px){
-//   .digital-section{
-//     background-position: calc(50%) calc(50% - 186px), calc(50% + 180px) calc(50% - 230px);
-//   }
-//   .digital{
-//     padding: 420px 0 88px 0;
-//     position: relative;
-//   }
+  .digital__img{
+    display: none;
 
-// }
-// @media only screen and(max-width: 425px){
-//   .digital-section{
-//     background-position: calc(50%) calc(50% - 178px), calc(50% + 180px) calc(50% - 230px);
-//   }
-//   .digital{
-//     padding: 420px 0 88px 0;
-//     position: relative;
-//   }
-//   .digital__text{
-//     margin: 0;
-//     margin-bottom: 32px;
-//   }
-// }
+  }
+  .digital__img-mobile{
+    display: block;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+
+  }
+}
+
 @media only screen and(max-width: 560px){
   .digital-section{
-    background-position: calc(50%) calc(50% - 185px), calc(50% + 180px) calc(50% - 230px);
+    background-position: calc(50% + 180px) calc(50% - 240px);
   }
-  // .digital{
-  //   padding: 380px 0 88px 0;
-  //   position: relative;
-  // }
+
+
 }
 @media only screen and(max-width: 386px){
   .digital-section{
-    background-position:calc(50%) calc(50% - 195px), calc(50% + 180px) calc(50% - 230px);
+    background-position: calc(50% + 180px) calc(50% - 230px);
   }
 }
 @media only screen and(max-width: 347px){
   .digital-section{
-    background-position:calc(50%) calc(50% - 228px), calc(50% + 180px) calc(50% - 230px);
-  }
-}
-@media only screen and(max-width: 327px){
-  .digital-section{
-    background-position:calc(50%) calc(50% - 231px), calc(50% + 180px) calc(50% - 230px);
+    background-position: calc(50% + 180px) calc(50% - 270px);
   }
 }
